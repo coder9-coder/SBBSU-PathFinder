@@ -1,0 +1,427 @@
+
+[
+  {
+    "course_id": "btech-cse",
+    "name": "B.Tech Computer Science Engineering",
+    "institute": "UETT",
+    "tuition_fee": 35000,
+    "first_semester_fee": 40500,
+    "subsequent_semester_fee": 43500
+  },
+  {
+    "course_id": "btech-mechanical",
+    "name": "B.Tech Mechanical Engineering",
+    "institute": "UETT",
+    "tuition_fee": 31000,
+    "first_semester_fee": 42500,
+    "subsequent_semester_fee": 39500
+  },
+  {
+    "course_id": "btech-civil",
+    "name": "B.Tech Civil Engineering",
+    "institute": "UETT",
+    "tuition_fee": 31000,
+    "first_semester_fee": 42500,
+    "subsequent_semester_fee": 39500
+  },
+  {
+    "course_id": "btech-electrical",
+    "name": "B.Tech Electrical Engineering",
+    "institute": "UETT",
+    "tuition_fee": 31000,
+    "first_semester_fee": 42500,
+    "subsequent_semester_fee": 39500
+  },
+  {
+    "course_id": "btech-aiml",
+    "name": "B.Tech CSE (AI & ML)",
+    "institute": "UETT",
+    "tuition_fee": 27500,
+    "first_semester_fee": 40000,
+    "subsequent_semester_fee": 36000
+  },
+  {
+    "course_id": "btech-cyber",
+    "name": "B.Tech (Cyber Security)",
+    "institute": "UETT",
+    "tuition_fee": 27500,
+    "first_semester_fee": 40000,
+    "subsequent_semester_fee": 36000
+  },
+  {
+    "course_id": "btech-cse-civil-ee-production",
+    "name": "B.Tech (CSE, Civil, EE & Production Engineering)",
+    "institute": "UETT",
+    "tuition_fee": 26500,
+    "first_semester_fee": 47000,
+    "subsequent_semester_fee": 50000
+  },
+  {
+    "course_id": "bba",
+    "name": "BBA",
+    "institute": "UICM",
+    "tuition_fee": 18775,
+    "first_semester_fee": 27000,
+    "subsequent_semester_fee": 24000
+  },
+  {
+    "course_id": "mba",
+    "name": "MBA",
+    "institute": "UICM",
+    "tuition_fee": 31000,
+    "first_semester_fee": 42500,
+    "subsequent_semester_fee": 39500
+  },
+  {
+    "course_id": "mhm",
+    "name": "MHM",
+    "institute": "UICM",
+    "tuition_fee": 9000,
+    "first_semester_fee": 17125,
+    "subsequent_semester_fee": 15025
+  },
+  {
+    "course_id": "bhmct",
+    "name": "BHMCT",
+    "institute": "UICM",
+    "tuition_fee": 18500,
+    "first_semester_fee": 30025,
+    "subsequent_semester_fee": 27225
+  },
+  {
+    "course_id": "mhmct",
+    "name": "MHMCT",
+    "institute": "UICM",
+    "tuition_fee": 18500,
+    "first_semester_fee": 30025,
+    "subsequent_semester_fee": 27225
+  },
+  {
+    "course_id": "bcom",
+    "name": "B.Com.",
+    "institute": "UICM",
+    "tuition_fee": 10250,
+    "first_semester_fee": 18775,
+    "subsequent_semester_fee": 15875
+  },
+  {
+    "course_id": "mcom",
+    "name": "M.Com.",
+    "institute": "UICM",
+    "tuition_fee": 12250,
+    "first_semester_fee": 20475,
+    "subsequent_semester_fee": 17475
+  },
+  {
+    "course_id": "bsc-it",
+    "name": "B.Sc. IT",
+    "institute": "UICAS",
+    "tuition_fee": 10000,
+    "first_semester_fee": 18920,
+    "subsequent_semester_fee": 16025
+  },
+  {
+    "course_id": "bsc-animation",
+    "name": "B.Sc. Animation and Multimedia",
+    "institute": "UICAS",
+    "tuition_fee": 17375,
+    "first_semester_fee": 25400,
+    "subsequent_semester_fee": 22800
+  },
+  {
+    "course_id": "bca",
+    "name": "BCA",
+    "institute": "UICAS",
+    "tuition_fee": 18775,
+    "first_semester_fee": 27000,
+    "subsequent_semester_fee": 24000
+  },
+  {
+    "course_id": "mca",
+    "name": "MCA",
+    "institute": "UICAS",
+    "tuition_fee": 31000,
+    "first_semester_fee": 42500,
+    "subsequent_semester_fee": 39500
+  },
+  {
+    "course_id": "blib",
+    "name": "B.Lib.",
+    "institute": "UICAS",
+    "tuition_fee": null,
+    "first_semester_fee": 33750,
+    "subsequent_semester_fee": null
+  },
+  {
+    "course_id": "mlib",
+    "name": "M.Lib.",
+    "institute": "UICAS",
+    "tuition_fee": null,
+    "first_semester_fee": 33750,
+    "subsequent_semester_fee": null
+  },
+  {
+    "course_id": "bsc-life",
+    "name": "B.Sc. Life Sciences",
+    "institute": "UIS",
+    "tuition_fee": 8800,
+    "first_semester_fee": 16825,
+    "subsequent_semester_fee": 14025
+  },
+  {
+    "course_id": "bsc-forensic",
+    "name": "B.Sc. Forensic Sciences",
+    "institute": "UIS",
+    "tuition_fee": 13500,
+    "first_semester_fee": 21525,
+    "subsequent_semester_fee": 18775
+  },
+  {
+    "course_id": "bsc-home",
+    "name": "B.Sc. House Science",
+    "institute": "UIS",
+    "tuition_fee": 8800,
+    "first_semester_fee": 16825,
+    "subsequent_semester_fee": 14025
+  },
+  {
+    "course_id": "bsc-physical",
+    "name": "B.Sc. Physical Sciences",
+    "institute": "UIS",
+    "tuition_fee": 8800,
+    "first_semester_fee": 16825,
+    "subsequent_semester_fee": 14025
+  },
+  {
+    "course_id": "msc-sciences",
+    "name": "M.Sc. (Hons.) Chemistry, Physics, Botany, Zoology, Mathematics",
+    "institute": "UIS",
+    "tuition_fee": 19000,
+    "first_semester_fee": 27925,
+    "subsequent_semester_fee": 24225
+  },
+  {
+    "course_id": "bmls",
+    "name": "Bachelor of Medical Laboratory Sciences",
+    "institute": "UIAHS",
+    "tuition_fee": 10300,
+    "first_semester_fee": 31625,
+    "subsequent_semester_fee": 26825
+  },
+  {
+    "course_id": "bmrit",
+    "name": "Bachelor of Medical Radiology & Imaging Technology (MRT)",
+    "institute": "UIAHS",
+    "tuition_fee": 17500,
+    "first_semester_fee": 37350,
+    "subsequent_semester_fee": 34050
+  },
+  {
+    "course_id": "baott",
+    "name": "Baccalaureate in Anaesthesia & Operation Theatre Technology (BAOTT)",
+    "institute": "UIAHS",
+    "tuition_fee": 17500,
+    "first_semester_fee": 37350,
+    "subsequent_semester_fee": 34050
+  },
+  {
+    "course_id": "bmls-microbiology",
+    "name": "Bachelor of Medical Laboratory Science (Medical Microbiology)",
+    "institute": "UIAHS",
+    "tuition_fee": 22800,
+    "first_semester_fee": 35350,
+    "subsequent_semester_fee": 32550
+  },
+  {
+    "course_id": "bmls-biochemistry",
+    "name": "Bachelor of Medical Laboratory Science (Medical Biochemistry)",
+    "institute": "UIAHS",
+    "tuition_fee": 22800,
+    "first_semester_fee": 35350,
+    "subsequent_semester_fee": 32550
+  },
+  {
+    "course_id": "bsc-agriculture",
+    "name": "B.Sc. (Hons.) Agriculture",
+    "institute": "UIA",
+    "tuition_fee": 17500,
+    "first_semester_fee": 25225,
+    "subsequent_semester_fee": 21225
+  },
+  {
+    "course_id": "msc-fruit",
+    "name": "M.Sc. (Hort.) Fruit Science",
+    "institute": "UIA",
+    "tuition_fee": 20000,
+    "first_semester_fee": 28025,
+    "subsequent_semester_fee": 25725
+  },
+  {
+    "course_id": "msc-vegetable",
+    "name": "M.Sc. (Hort.) Vegetable Science",
+    "institute": "UIA",
+    "tuition_fee": 20000,
+    "first_semester_fee": 28025,
+    "subsequent_semester_fee": 25725
+  },
+  {
+    "course_id": "msc-agronomy",
+    "name": "M.Sc. Agronomy",
+    "institute": "UIA",
+    "tuition_fee": 20000,
+    "first_semester_fee": 28025,
+    "subsequent_semester_fee": 25725
+  },
+  {
+    "course_id": "msc-soil",
+    "name": "M.Sc. Soil Science and Agricultural Chemistry",
+    "institute": "UIA",
+    "tuition_fee": 20000,
+    "first_semester_fee": 28025,
+    "subsequent_semester_fee": 25725
+  },
+  {
+    "course_id": "msc-food",
+    "name": "M.Sc. Food Science & Technology",
+    "institute": "UIA",
+    "tuition_fee": 23000,
+    "first_semester_fee": 31025,
+    "subsequent_semester_fee": 26225
+  },
+  {
+    "course_id": "ba-humanities",
+    "name": "BA (Humanities)",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 17275,
+    "subsequent_semester_fee": 14475
+  },
+  {
+    "course_id": "ba-yoga",
+    "name": "BA (Yoga)",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 17275,
+    "subsequent_semester_fee": 14475
+  },
+  {
+    "course_id": "ma-punjabi",
+    "name": "MA Punjabi",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 15275,
+    "subsequent_semester_fee": 12475
+  },
+  {
+    "course_id": "ma-english",
+    "name": "MA English",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 15275,
+    "subsequent_semester_fee": 12475
+  },
+  {
+    "course_id": "ma-economics",
+    "name": "MA Economics",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 15275,
+    "subsequent_semester_fee": 12475
+  },
+  {
+    "course_id": "ma-political-science",
+    "name": "MA Political Science",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 15275,
+    "subsequent_semester_fee": 12475
+  },
+  {
+    "course_id": "ma-history",
+    "name": "MA History",
+    "institute": "UIH",
+    "tuition_fee": 7250,
+    "first_semester_fee": 15275,
+    "subsequent_semester_fee": 12475
+  },
+  {
+    "course_id": "fashion-design",
+    "name": "B.Sc. Fashion Designing",
+    "institute": "UIH",
+    "tuition_fee": 16500,
+    "first_semester_fee": 28150,
+    "subsequent_semester_fee": 23350
+  },
+  {
+    "course_id": "msc-fashion",
+    "name": "M.Sc. Fashion Designing and Merchandising",
+    "institute": "UIH",
+    "tuition_fee": 16500,
+    "first_semester_fee": 28150,
+    "subsequent_semester_fee": 23350
+  },
+  {
+    "course_id": "bped",
+    "name": "B.P.Ed.",
+    "institute": "LIE",
+    "tuition_fee": 14750,
+    "first_semester_fee": 28000,
+    "subsequent_semester_fee": 26000
+  },
+  {
+    "course_id": "bpes",
+    "name": "B.P.E.S.",
+    "institute": "LIE",
+    "tuition_fee": 7950,
+    "first_semester_fee": 28800,
+    "subsequent_semester_fee": 16000
+  },
+  {
+    "course_id": "mpes",
+    "name": "M.P.E.S.",
+    "institute": "LIE",
+    "tuition_fee": 17000,
+    "first_semester_fee": 30300,
+    "subsequent_semester_fee": 23500
+  },
+  {
+    "course_id": "bed",
+    "name": "B.Ed.",
+    "institute": "LIE",
+    "tuition_fee": 14750,
+    "first_semester_fee": 29500,
+    "subsequent_semester_fee": 26500
+  },
+  {
+    "course_id": "med",
+    "name": "M.Ed.",
+    "institute": "LIE",
+    "tuition_fee": 14750,
+    "first_semester_fee": 29500,
+    "subsequent_semester_fee": 26500
+  },
+  {
+    "course_id": "ba-llb",
+    "name": "B.A.L.L.B",
+    "institute": "UIL",
+    "tuition_fee": 18500,
+    "first_semester_fee": 30700,
+    "subsequent_semester_fee": 22700
+  },
+  {
+    "course_id": "llm",
+    "name": "LLM",
+    "institute": "UIL",
+    "tuition_fee": 28000,
+    "first_semester_fee": 30025,
+    "subsequent_semester_fee": 24025
+  },
+  {
+    "course_id": "certificate-courses",
+    "name": "Certificate courses, Computer network, Web Design, PG Diploma in Yoga",
+    "institute": null,
+    "tuition_fee": null,
+    "first_semester_fee": null,
+    "subsequent_semester_fee": null
+  }
+]

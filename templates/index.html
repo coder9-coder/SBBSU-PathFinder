@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SBBSU PathFinder | AI Course Guidance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+    <a class="brand" href="/" aria-label="SBBSU PathFinder home">
+        <img
+            class="university-logo"
+            src="{{ url_for('static', filename='sbbsu-logo.jpg.jpg') }}"
+            alt="Sant Baba Bhag Singh University logo"
+        >
+
+        <span class="brand-text">
+            <strong>SBBSU PathFinder</strong>
+            <small>Sant Baba Bhag Singh University</small>
+            <small class="brand-tagline">AI Course Guidance</small>
+        </span>
+    </a>
+
+    <span class="status-pill">
+        <span class="status-dot"></span>
+        Personalised matching
+    </span>
+</header>
+
+
+<main class="page-container">
+    <section class="hero">
+        <p class="eyebrow">YOUR FUTURE, YOUR CHOICE</p>
+        <h1>Discover your <span>right direction.</span></h1>
+        <p class="hero-copy">Answer a few questions. We'll match your interests and preferences with the SBBSU course catalogue.</p>
+    </section>
+
+    <section class="form-panel">
+        <div class="section-heading">
+            <div>
+                <p id="stepLabel" class="eyebrow">STEP 1 OF 4</p>
+                <h2 id="stepTitle">Your qualification</h2>
+            </div>
+        </div>
+
+        <div style="height:5px;background:#302d49;border-radius:9px;margin-bottom:26px;overflow:hidden">
+            <div id="progressBar" style="height:100%;width:25%;background:linear-gradient(90deg,#a78bfa,#67e8f9);transition:width .2s"></div>
+        </div>
+
+        <form id="profileForm">
+            <section class="wizard-step" data-step="0">
+                <div class="field-group">
+                    <label for="qualification">What is your current qualification? *</label>
+                    <select id="qualification" required>
+                        <option value="">Choose qualification</option>
+                        <option value="10th">Class 10 completed</option>
+                        <option value="12th">Class 12 completed / appearing</option>
+                        <option value="diploma">Diploma / D.Voc</option>
+                        <option value="graduation">Graduation completed / appearing</option>
+                        <option value="postgraduation">Postgraduation completed</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="stream">Your stream *</label>
+                    <select id="stream" required>
+                        <option value="">Choose stream</option>
+                        <option value="Non-Medical">Non-Medical</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts / Humanities</option>
+                        <option value="Graduation">Graduation</option>
+                        <option value="Other">Other / Not sure</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="marks">Approximate percentage (optional)</label>
+                    <input id="marks" type="number" min="0" max="100" step="0.01" placeholder="e.g. 78">
+                </div>
+
+                <div class="field-group">
+                    <label for="level">Which level are you exploring? *</label>
+                    <select id="level" required>
+                        <option value="">Choose course level</option>
+                        <option value="UG">Undergraduate (UG)</option>
+                        <option value="PG">Postgraduate (PG)</option>
+                    </select>
+                    <p class="field-help">Final eligibility depends on the specific programme and official university rules.</p>
+                </div>
+            </section>
+
+            <section class="wizard-step" data-step="1" hidden>
+                <div class="field-group">
+                    <label>Choose all interests that apply *</label>
+                    <p class="field-help">Your next questions will be based on these selections.</p>
+                    <div class="interest-grid">
+                        <label class="interest-option"><input type="checkbox" value="technology"><span>💻 Technology</span></label>
+                        <label class="interest-option"><input type="checkbox" value="ai"><span>🤖 AI & ML</span></label>
+                        <label class="interest-option"><input type="checkbox" value="business"><span>📈 Business</span></label>
+                        <label class="interest-option"><input type="checkbox" value="finance"><span>💰 Finance</span></label>
+                        <label class="interest-option"><input type="checkbox" value="healthcare"><span>🩺 Healthcare</span></label>
+                        <label class="interest-option"><input type="checkbox" value="science"><span>🔬 Science</span></label>
+                        <label class="interest-option"><input type="checkbox" value="agriculture"><span>🌱 Agriculture</span></label>
+                        <label class="interest-option"><input type="checkbox" value="law"><span>⚖️ Law</span></label>
+                        <label class="interest-option"><input type="checkbox" value="design"><span>🎨 Design</span></label>
+                        <label class="interest-option"><input type="checkbox" value="humanities"><span>📖 Humanities</span></label>
+                        <label class="interest-option"><input type="checkbox" value="education"><span>🍎 Education</span></label>
+                        <label class="interest-option"><input type="checkbox" value="sports"><span>🏅 Sports</span></label>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wizard-step" data-step="2" hidden>
+                <p class="field-help">Questions will load for every interest you selected.</p>
+                <div id="questionContainer"></div>
+            </section>
+
+            <section class="wizard-step" data-step="3" hidden>
+                <h3>Ready to find your matches?</h3>
+                <p class="hero-copy" style="text-align:left;margin-left:0">We'll compare your qualification, stream, course level, interests and answers with the course catalogue.</p>
+                <div id="profileSummary" class="empty-state"></div>
+            </section>
+
+            <p id="errorMessage" class="error-message" role="alert"></p>
+
+            <div style="display:flex;gap:12px;margin-top:20px">
+                <button type="button" id="backButton" class="primary-button" style="background:#302d49;color:#fff;flex:1" hidden>← Back</button>
+                <button type="button" id="nextButton" class="primary-button" style="flex:2">Continue →</button>
+                <button type="submit" id="submitButton" class="primary-button" style="flex:2" hidden>Find my matches ✦</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="resultsSection" class="results-section" hidden>
+        <div class="results-heading">
+            <div><p class="eyebrow">YOUR RESULTS</p><h2>Recommended courses</h2></div>
+            <span id="resultCount" class="result-count">0 matches</span>
+        </div>
+        <div id="aiExplanation" class="ai-explanation" hidden></div>
+        <p id="demoNotice" class="notice"></p>
+        <div id="courseResults" class="course-results"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>SBBSU PathFinder · AI-assisted course guidance</p>
+    <p>Match scores are preference indicators, not admission guarantees. Verify course details with the university.</p>
+    <p class="developer-credit">Developed by Tanish Bhatia.</p>
+</footer>
+<!-- AI Career Counsellor -->
+<button
+    type="button"
+    id="chatToggle"
+    class="chat-toggle"
+    aria-controls="aiChatPanel"
+    aria-expanded="false"
+>
+    <span class="chat-toggle-icon">✦</span>
+    <span>Chat with AI</span>
+</button>
+
+<section
+    id="aiChatPanel"
+    class="ai-chat-panel"
+    aria-label="AI Career Counsellor"
+    hidden
+>
+    <header class="ai-chat-header">
+        <div>
+            <strong>PathFinder AI</strong>
+            <p>Your course & career counsellor</p>
+        </div>
+        <button
+            type="button"
+            id="chatClose"
+            class="chat-close"
+            aria-label="Close chat"
+        >×</button>
+    </header>
+
+    <div id="chatMessages" class="chat-messages" aria-live="polite">
+        <div class="chat-bubble bot">
+            Hi! I'm your SBBSU PathFinder AI counsellor.
+            Ask me about courses, fees, eligibility, careers or what to study next.
+        </div>
+    </div>
+
+    <form id="chatForm" class="chat-form">
+        <textarea
+            id="chatInput"
+            rows="1"
+            maxlength="2000"
+            placeholder="Ask about courses or careers..."
+            aria-label="Your message"
+            required
+        ></textarea>
+        <button type="submit" id="chatSend">Send</button>
+    </form>
+
+    <p class="chat-disclaimer">
+        Verify fees and admission requirements with the university.
+    </p>
+</section>
+</body>
+
+
